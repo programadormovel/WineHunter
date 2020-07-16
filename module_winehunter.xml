@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="module_winehunter" default="compile.module.winehunter">
+  <dirname property="module.winehunter.basedir" file="${ant.file.module_winehunter}"/>
+  
+  <property name="module.jdk.home.winehunter" value="${jdk.home.1.8}"/>
+  <property name="module.jdk.bin.winehunter" value="${jdk.bin.1.8}"/>
+  <property name="module.jdk.classpath.winehunter" value="jdk.classpath.1.8"/>
+  
+  <property name="compiler.args.winehunter" value="-encoding UTF-8 -source 1.7 -target 1.7 ${compiler.args}"/>
+  
+  <property name="winehunter.output.dir" value="${module.winehunter.basedir}/build/classes/production/WineHunter"/>
+  <property name="winehunter.testoutput.dir" value="${module.winehunter.basedir}/build/classes/test/WineHunter"/>
+  
+  <path id="winehunter.module.bootclasspath">
+    <!-- Paths to be included in compilation bootclasspath -->
+  </path>
+  
+  <path id="winehunter.module.production.classpath">
+    <path refid="${module.jdk.classpath.winehunter}"/>
+  </path>
+  
+  <path id="winehunter.runtime.production.module.classpath">
+    <pathelement location="${winehunter.output.dir}"/>
+  </path>
+  
+  <path id="winehunter.module.classpath">
+    <path refid="${module.jdk.classpath.winehunter}"/>
+    <pathelement location="${winehunter.output.dir}"/>
+  </path>
+  
+  <path id="winehunter.runtime.module.classpath">
+    <pathelement location="${winehunter.testoutput.dir}"/>
+    <pathelement location="${winehunter.output.dir}"/>
+  </path>
+  
+  
+  <patternset id="excluded.from.module.winehunter">
+    <patternset refid="ignored.files"/>
+  </patternset>
+  
+  <patternset id="excluded.from.compilation.winehunter">
+    <patternset refid="excluded.from.module.winehunter"/>
+  </patternset>
+  
+  
+  <target name="compile.module.winehunter" depends="compile.module.winehunter.production,compile.module.winehunter.tests" description="Compile module WineHunter"/>
+  
+  <target name="compile.module.winehunter.production" depends="register.custom.compilers" description="Compile module WineHunter; production classes"/>
+  
+  <target name="compile.module.winehunter.tests" depends="register.custom.compilers,compile.module.winehunter.production" description="compile module WineHunter; test classes" unless="skip.tests"/>
+  
+  <target name="clean.module.winehunter" description="cleanup module">
+    <delete dir="${winehunter.output.dir}"/>
+    <delete dir="${winehunter.testoutput.dir}"/>
+  </target>
+</project>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:background="@color/fundo2"
+    android:onClick="bntConsultarLojaSelecionadoClick" android:orientation="vertical">
+
+    <TextView android:id="@+id/txv04ListarLayoutLink" android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:text="@string/link"
+        android:textAppearance="?android:attr/textAppearanceSmall" android:visibility="invisible" />
+
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="49dp"
+        tools:ignore="UselessParent">
+
+        <TextView android:id="@+id/txv01ListarLayoutLojasID" android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:text="@string/ID"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:visibility="invisible" />
+
+        <ImageView android:id="@+id/iv01ListarLojasFoto" android:layout_width="50dp"
+            android:layout_height="200dp" android:layout_alignParentStart="true"
+            android:layout_below="@+id/txv01ListarLayoutID"
+            android:background="@drawable/wine_theme_438246_960_720"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/vinho_vermelho_de_derramamento_23_2147510336" />
+
+        <ImageButton android:id="@+id/ibtn01ComprarVinho" android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/txv02ListarLayoutNome"
+            android:onClick="bntConsultarLojaSelecionadaClick"
+            android:src="@drawable/icons8_avancar_48" />
+
+        <TextView android:id="@+id/txv03ListarLayoutLojasValor" android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:layout_alignParentBottom="true"
+            android:layout_alignTop="@+id/ibtn01ComprarVinho"
+            android:layout_toLeftOf="@+id/ibtn01ComprarVinho" android:gravity="center"
+            android:text="@string/valor" android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/fundo3" android:textSize="18sp" />
+
+        <TextView android:id="@+id/txv02ListarLayoutLojasLoja" android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:layout_alignParentBottom="true"
+            android:layout_alignParentTop="true" android:layout_toEndOf="@+id/iv01ListarFoto"
+            android:layout_toLeftOf="@+id/txv03ListarLayoutLojasValor"
+            android:layout_toRightOf="@+id/iv01ListarLojasFoto" android:text="@string/loja"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/fundo3" android:textSize="16sp" />
+
+    </RelativeLayout>
+
+</LinearLayout>

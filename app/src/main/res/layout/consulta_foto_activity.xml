@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/RelativeLayout1" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:background="@color/fundo2"
+    android:orientation="vertical">
+
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:columnCount="4"
+        android:rowCount="5">
+
+        <EditText
+            android:id="@+id/tv01ConsultarFotoNome"
+            android:layout_width="328dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:gravity="center_horizontal|left"
+            android:hint="@string/txtBuscarVinhoHint"
+            android:inputType="text|textPersonName"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/fundo3" />
+
+        <ListView
+            android:id="@+id/lista01ConsultarFoto"
+            android:layout_width="match_parent"
+            android:layout_height="391dp"
+            android:layout_column="0"
+            android:layout_gravity="left|top"
+            android:layout_row="3"></ListView>
+
+        <ImageView
+            android:id="@+id/ivConsultarFotoFoto"
+            android:layout_width="match_parent"
+            android:layout_height="246dp"
+            android:layout_column="0"
+            android:layout_gravity="left|top"
+            android:layout_row="1"
+            android:background="@color/fundo3"
+            android:contentDescription="@string/foto"
+            android:src="@drawable/wine800px" />
+
+        <ImageButton
+            android:id="@+id/btn01ConsultarFotoBuscaFoto"
+            android:layout_width="55dp"
+            android:layout_height="48dp"
+            android:layout_column="0"
+            android:layout_gravity="right|top"
+            android:layout_row="2"
+            android:background="@color/titulo"
+            android:contentDescription="@string/buscaFoto"
+            android:onClick="onSelectImageClick"
+            android:src="@android:drawable/ic_menu_gallery" />
+
+        <ImageButton
+            android:id="@+id/btn02ConsultaFotoClicaFoto"
+            android:layout_width="54dp"
+            android:layout_height="48dp"
+            android:layout_column="0"
+            android:layout_gravity="left|top"
+            android:layout_row="2"
+            android:background="@color/titulo"
+            android:contentDescription="@string/buscaFoto"
+            android:onClick="onSelectImageClick"
+            android:src="@android:drawable/ic_menu_camera" />
+
+    </GridLayout>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="55dp"
+        android:layout_height="46dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="0dp"
+        app:srcCompat="@drawable/icons8_pesquisar_40" />
+
+</RelativeLayout>

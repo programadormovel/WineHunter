@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Wine-Hunter</string>
+    <string name="Listar">Listar</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="Cadastrar">Cadastrar</string>
+    <string name="Nome">Nome</string>
+    <string name="ID">ID</string>
+    <string name="Email">Email</string>
+    <string name="Telefone">Telefone</string>
+    <string name="Sexo">Sexo</string>
+    <string name="Masculino">Masculino</string>
+    <string name="txtCadastroNome"></string>
+    <string name="Feminino">Feminino</string>
+    <string name="txtCadastroDescricao" />
+    <string name="txtCadastroEmail" />
+    <string name="txtCadastroTelefone" />
+    <string name="txtCadastroVinicula" />
+    <string name="txtCadastroFornecedor" />
+    <string name="txtCadastroAno" />
+    <string name="txtCadastroVolume" />
+    <string name="txtCadastroValor" />
+    <string name="Alterar">Alterar</string>
+    <string name="Deletar">Deletar</string>
+    <string name="txtAlterarEmail" />
+    <string name="txtAlterarNome" />
+    <string name="txtAlterarTelefone" />
+    <string name="TelaInicialCadastrarClick">TelaInicialCadastrarClick</string>
+    <string name="TelaInicialListarClick">TelaInicialListarClick</string>
+    <string name="banner_fieb_belval">banner_fieb_belval</string>
+    <string name="bntCadastroCadastrarClick">bntCadastroCadastrarClick</string>
+    <string name="Sair">Sair</string>
+    <string name="Opcoes">Opções</string>
+    <string name="Tela1">Tela 1</string>
+    <string name="BaixarDadosDaWeb">Baixar Dados da Web</string>
+    <string name="BaixarDadosDaWebViaJSON">Baixar Dados da Web via JSON</string>
+    <string name="Tela2">Tela 2</string>
+    <string name="EnviarDadosParaWeb">Enviar Dados para Web</string>
+    <string name="Tela3">Tela 3</string>
+    <string name="DeletarTodosOsDados">Deletar Todos os Dados</string>
+    <string name="buscaFoto">Buscar Foto Galeria</string>
+    <string name="caminho">Caminho da Foto</string>
+    <string name="foto">foto</string>
+    <string name="caminhoCompleto" />
+    <string name="buscar">Buscar</string>
+    <string name="vinicula">Vinícula</string>
+    <string name="fornecedor">Fornecedor</string>
+    <string name="ano">Ano</string>
+    <string name="volume">Volume</string>
+    <string name="valor">Valor</string>
+    <string name="txtBuscarVinho"></string>
+    <string name="resultado"></string>
+    <string name="precoVinho"></string>
+    <string name="link">link</string>
+    <string name="txtBuscarVinhoHint">Encontre aqui seu vinho...</string>
+    <string name="vinhoConsultado">Vinho Consultado</string>
+    <string name="cancelarBusca">Cancelar</string>
+    <string name="vinhoEscolhido">Vinho Selecionado</string>
+    <string name="loja">Loja</string>
+    <string name="compra">Realizar Compra</string>
+    <string name="title_activity_navegador_internet">Compre seu vinho aqui...</string>
+    <string name="title_activity_login">Cadastre-se</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+
+    <string name="hello">Hello World, DatumDroidOCRActivity!</string>
+    <string name="button_text">OCR!</string>
+    <string name="text_hint">OCRed Text will appear here</string>
+    <string name="login_email">Entre com seu email</string>
+    <string name="login_google">Entre com sua conta Google</string>
+
+    <string name="empty_string"></string>
+    <string name="touchpad_touched">Processing Image</string>
+
+    <string name="glass_voice_trigger">what is that</string>
+    <string name="glass_voice_prompt">what else is that</string>
+    <string name="title_activity_java_camera">JavaCameraActivity</string>
+
+</resources>

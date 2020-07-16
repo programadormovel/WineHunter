@@ -1,0 +1,29 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="br.com.itb.teem.agenda.TelaInicial">
+
+    <item android:id="@+id/mnu01TelaInicialCadastrar" android:icon="@drawable/ic_menu_add"
+        android:showAsAction="always" android:title="@string/Cadastrar" />
+
+    <item android:id="@+id/mnu02TelaInicialListar" android:icon="@drawable/ic_menu_sort_by_size"
+        android:showAsAction="always" android:title="@string/Listar" />
+
+    <item android:id="@+id/mnu03TelaInicialSair" android:icon="@drawable/ic_menu_back"
+        android:showAsAction="always" android:title="@string/Sair" />
+
+    <item android:id="@+id/mnu04TelaInicialOpcoes" android:icon="@drawable/ic_menu_more"
+        android:showAsAction="always" android:title="@string/Opcoes" android:visible="true">
+        <menu>
+            <item android:id="@+id/mnu05TelaInicialBaixarDados" android:showAsAction="always"
+                android:title="@string/BaixarDadosDaWeb" />
+            <item android:id="@+id/mnu06TelaInicialEnviarDados" android:showAsAction="always"
+                android:title="@string/EnviarDadosParaWeb" />
+            <item android:id="@+id/mnu07TelaInicialDeletarDados" android:showAsAction="always"
+                android:title="@string/DeletarTodosOsDados" />
+            <item android:id="@+id/mnu08TelaInicialBaixarDadosJSON" android:showAsAction="always"
+                android:title="@string/BaixarDadosDaWebViaJSON" android:visible="true" />
+        </menu>
+    </item>
+
+
+</menu>

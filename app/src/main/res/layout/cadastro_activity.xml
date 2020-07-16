@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:orientation="vertical">
+
+    <ScrollView android:id="@+id/scrollView1" android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <LinearLayout android:id="@+id/LinearLayoutCadastro" android:layout_width="317dp"
+            android:layout_height="438dp" android:orientation="vertical">
+
+            <GridLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:layout_weight="0.58" android:columnCount="2">
+
+                <ImageButton android:id="@+id/btn02CadastroClicaFoto"
+                    android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:layout_column="1" android:layout_gravity="left|bottom"
+                    android:layout_row="0" android:layout_weight="0.90"
+                    android:background="@color/titulo"
+                    android:contentDescription="@string/buscaFoto"
+                    android:onClick="btnCapturarFotoClick"
+                    android:src="@android:drawable/ic_menu_camera" />
+
+                <ImageButton android:id="@+id/btn01CadastroBuscaFoto"
+                    android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:layout_column="1" android:layout_gravity="left|center_vertical"
+                    android:layout_row="0" android:layout_weight="0.90"
+                    android:background="@color/titulo"
+                    android:contentDescription="@string/buscaFoto"
+                    android:onClick="btnInserirFotoClick"
+                    android:src="@android:drawable/ic_menu_gallery" />
+
+                <ImageView android:id="@+id/ivCadastroFoto" android:layout_width="122dp"
+                    android:layout_height="150dp" android:layout_column="0"
+                    android:layout_gravity="left|top" android:layout_row="0"
+                    android:layout_weight="0.90" android:contentDescription="@string/Cadastrar"
+                    android:src="@drawable/wine800px" />
+
+                <ImageView android:id="@+id/ivFotoTexto" android:layout_width="122dp"
+                    android:layout_height="150dp" android:layout_column="1"
+                    android:layout_gravity="right|top" android:layout_row="0"
+                    android:layout_weight="0.90" android:contentDescription="@string/Cadastrar"
+                    android:src="@drawable/ic_launcher" android:visibility="invisible" />
+
+                <EditText android:id="@+id/txtCaminhoFoto" android:layout_width="wrap_content"
+                    android:layout_column="1" android:layout_gravity="fill_horizontal|top"
+                    android:layout_row="1" android:enabled="false"
+                    android:hint="@string/caminhoCompleto" android:inputType="text"
+                    android:text="@string/caminhoCompleto" />
+            </GridLayout>
+
+            <TextView android:id="@+id/tvNome" android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:layout_marginTop="16dp"
+                android:text="@string/Nome"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <EditText android:id="@+id/edt01CadastroDescricao" android:layout_width="fill_parent"
+                android:layout_height="wrap_content" android:layout_below="@+id/tvNome"
+                android:ems="10" android:hint="@string/txtCadastroDescricao"
+                android:inputType="textPersonName" android:text="@string/txtCadastroDescricao">
+
+                <requestFocus android:layout_width="wrap_content" />
+            </EditText>
+
+            <TextView android:id="@+id/tvVinicula" android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:layout_below="@+id/edt01CadastroNome"
+                android:layout_marginTop="18dp" android:hint="@string/txtCadastroFornecedor"
+                android:text="@string/vinicula"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <EditText android:id="@+id/edt02CadastroVinicula" android:layout_width="fill_parent"
+                android:layout_height="wrap_content" android:ems="10"
+                android:hint="@string/txtCadastroVinicula" android:inputType="textPersonName"
+                android:text="@string/txtCadastroVinicula" />
+
+            <TextView android:id="@+id/tvFornecedor" android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:layout_below="@+id/edt02CadastroEmail"
+                android:layout_marginTop="18dp" android:hint="@string/fornecedor"
+                android:text="@string/fornecedor"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <EditText android:id="@+id/edt03CadastroFornecedor" android:layout_width="fill_parent"
+                android:layout_height="wrap_content" android:layout_below="@+id/tvTelefone"
+                android:ems="10" android:hint="@string/txtCadastroFornecedor"
+                android:inputType="textPersonName" android:text="@string/txtCadastroFornecedor" />
+
+            <TextView android:id="@+id/tvAno" android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:layout_marginTop="18dp"
+                android:layout_weight="0.58" android:text="@string/ano"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <EditText android:id="@+id/edt04CadastroAno" android:layout_width="fill_parent"
+                android:layout_height="wrap_content" android:layout_weight="0.58" android:ems="10"
+                android:hint="@string/txtCadastroAno" android:inputType="number"
+                android:text="@string/txtCadastroAno" />
+
+            <TextView android:id="@+id/tvVolume" android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:layout_marginTop="18dp"
+                android:layout_weight="0.58" android:text="@string/volume"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <EditText android:id="@+id/edt05CadastroVolume" android:layout_width="fill_parent"
+                android:layout_height="wrap_content" android:layout_weight="0.58" android:ems="10"
+                android:hint="@string/txtCadastroVolume" android:inputType="numberDecimal"
+                android:text="@string/txtCadastroVolume" />
+
+            <TextView android:id="@+id/tvValor" android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:layout_marginTop="18dp"
+                android:layout_weight="0.58" android:text="@string/valor"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <EditText android:id="@+id/edt06CadastroValor" android:layout_width="fill_parent"
+                android:layout_height="wrap_content" android:layout_weight="0.58" android:ems="10"
+                android:hint="@string/txtCadastroValor" android:inputType="numberDecimal"
+                android:text="@string/txtCadastroValor" />
+
+            <Button android:id="@+id/btn01CadastroCadastrar" android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:layout_marginBottom="17dp"
+                android:layout_weight="1.73" android:hint="@string/Cadastrar"
+                android:onClick="@string/bntCadastroCadastrarClick"
+                android:text="@string/Cadastrar" />
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

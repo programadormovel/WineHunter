@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1Alterar" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:orientation="vertical">
+
+    <ScrollView android:id="@+id/scrollView1" android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <LinearLayout android:id="@+id/LinearLayoutCadastro" android:layout_width="317dp"
+            android:layout_height="438dp" android:orientation="vertical">
+
+            <GridLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:layout_weight="0.90" android:columnCount="2">
+
+                <ImageView android:id="@+id/ivAlterarFoto" android:layout_width="122dp"
+                    android:layout_height="150dp" android:layout_weight="0.90"
+                    android:contentDescription="@string/Cadastrar"
+                    android:src="@drawable/ic_launcher" />
+
+                <ImageButton android:id="@+id/btn02AlterarClicaFoto"
+                    android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:layout_column="1" android:layout_gravity="left|bottom"
+                    android:layout_row="0" android:layout_weight="0.90"
+                    android:background="@drawable/ic_launcher"
+                    android:contentDescription="@string/buscaFoto"
+                    android:onClick="btnCapturarFotoClick" android:src="@drawable/ic_menu_add" />
+
+                <ImageButton android:id="@+id/btn01AlterarBuscaFoto"
+                    android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:layout_column="1" android:layout_gravity="left|center_vertical"
+                    android:layout_row="0" android:layout_weight="0.90"
+                    android:contentDescription="@string/buscaFoto"
+                    android:onClick="btnInserirFotoClick" android:src="@drawable/ic_menu_add" />
+
+            </GridLayout>
+
+            <TextView android:id="@+id/tvAlterarNome" android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:layout_marginTop="16dp"
+                android:text="@string/Nome"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <EditText android:id="@+id/edt01AlterarNome" android:layout_width="fill_parent"
+                android:layout_height="wrap_content" android:layout_below="@+id/tvNome"
+                android:ems="10" android:hint="@string/txtCadastroNome" android:inputType="text"
+                android:text="@string/txtCadastroNome">
+
+                <requestFocus android:layout_width="wrap_content" />
+
+            </EditText>
+
+            <TextView android:id="@+id/tvAlterarEmail" android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:layout_below="@+id/edt01CadastroNome"
+                android:layout_marginTop="18dp" android:text="@string/Email"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <EditText android:id="@+id/edt02AlterarEmail" android:layout_width="fill_parent"
+                android:layout_height="wrap_content" android:ems="10"
+                android:hint="@string/txtCadastroEmail" android:inputType="textEmailAddress"
+                android:text="@string/txtCadastroEmail" />
+
+            <TextView android:id="@+id/tvAlterarTelefone" android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:layout_below="@+id/edt02CadastroEmail"
+                android:layout_marginTop="18dp" android:hint="@string/Telefone"
+                android:text="@string/Telefone"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <EditText android:id="@+id/edt03AlterarTelefone" android:layout_width="fill_parent"
+                android:layout_height="wrap_content" android:layout_below="@+id/tvTelefone"
+                android:ems="10" android:hint="@string/txtCadastroTelefone"
+                android:inputType="text|phone" android:text="@string/txtCadastroTelefone" />
+
+            <RadioGroup android:id="@+id/rdg01AlteraSexo" android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edt03CadastroTelefone">
+
+                <RadioButton android:id="@+id/rdb01AlterarMasculino"
+                    android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="@string/Masculino" />
+
+                <RadioButton android:id="@+id/rdb02AlterarFeminino"
+                    android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:checked="true" android:text="@string/Feminino" />
+            </RadioGroup>
+
+            <Button android:id="@+id/btn01AlterarAlterar" android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:layout_marginBottom="17dp"
+                android:layout_weight="1.73" android:hint="@string/Cadastrar"
+                android:onClick="bnt01AlterarAlterarClick" android:text="@string/Cadastrar" />
+
+            <Button android:id="@+id/btn02AlterarApagar" android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:layout_weight="1.73"
+                android:onClick="bnt02AlterarApagarClick" android:text="Button" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

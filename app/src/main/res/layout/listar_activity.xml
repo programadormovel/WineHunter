@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:background="@color/fundo2"
+    android:layoutMode="opticalBounds" android:overScrollMode="always">
+
+    <EditText android:id="@+id/tvResultado" android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:layout_above="@+id/ltvListarActivity"
+        android:layout_alignParentLeft="true" android:layout_alignParentRight="true"
+        android:hint="@string/resultado" android:text="@string/resultado"
+        android:visibility="invisible" />
+
+    <Space android:layout_width="wrap_content" android:layout_height="wrap_content" />
+
+    <Space android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:layout_marginLeft="52dp" android:layout_marginTop="34dp" />
+
+    <ListView android:id="@+id/ltvListarActivity" android:layout_width="match_parent"
+        android:layout_height="288dp" android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true" android:layout_marginBottom="31dp"
+        android:background="@color/fundo3"></ListView>
+
+    <GridLayout android:id="@+id/gridLayout1" android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:layout_above="@+id/tvResultado"
+        android:layout_alignParentLeft="true" android:alignmentMode="alignBounds"
+        android:background="@color/fundo2" android:columnCount="4">
+
+        <ImageView android:id="@+id/imageView1" android:layout_width="wrap_content"
+            android:layout_height="match_parent" android:layout_column="0"
+            android:layout_gravity="left|top" android:layout_row="0" android:src="@drawable/wine" />
+    </GridLayout>
+
+    <EditText android:id="@+id/edt01BuscarVinho" android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/tvResultado" android:layout_toLeftOf="@+id/btn01BuscarVinho"
+        android:background="@color/fundo3" android:ems="10" android:freezesText="false"
+        android:hint="@string/txtBuscarVinhoHint" android:inputType="textPersonName"
+        android:lines="1" android:text="@string/txtBuscarVinho" android:textColor="@color/fundo"
+        android:textColorHint="@color/fundo1" android:textColorLink="@color/fundo1"
+        android:typeface="sans" />
+
+    <ImageButton android:id="@+id/btn01BuscarVinho" style="@style/AppBaseTheme"
+        android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/edt01BuscarVinho" android:layout_alignParentRight="true"
+        android:adjustViewBounds="true" android:background="@color/fundo3"
+        android:contentDescription="@string/txtBuscarVinhoHint" android:maxHeight="50dp"
+        android:maxWidth="50dp" android:onClick="bntBuscarVinhosClick"
+        android:scaleType="centerInside" android:src="@drawable/icons8_detetive_64" />
+
+    <ImageView android:id="@+id/iv01ImagemTelaInicial" android:layout_width="180dp"
+        android:layout_height="300dp" android:layout_above="@+id/btn01BuscarVinho"
+        android:layout_toLeftOf="@+id/btn01BuscarVinho" android:src="@drawable/wine800px" />
+
+</RelativeLayout>

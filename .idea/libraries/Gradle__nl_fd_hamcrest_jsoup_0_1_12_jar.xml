@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: nl.fd:hamcrest-jsoup:0.1.12@jar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/nl.fd/hamcrest-jsoup/0.1.12/547428912551e3e401a6545cf3fc49e426ae9057/hamcrest-jsoup-0.1.12.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/nl.fd/hamcrest-jsoup/0.1.12/e3b2d63ff0ada0aa86b41ad4bf502a6befe6fde8/hamcrest-jsoup-0.1.12-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

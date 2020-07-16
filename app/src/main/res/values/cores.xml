@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="fundo">#581d22</color>
+    <color name="fundo1">#C0C0C0</color>
+    <color name="fundo2">#853643</color>
+    <color name="fundo3">#ffffff</color>
+    <color name="menu">#231344</color>
+    <color name="titulo">#581d22</color>
+    <color name="titulo1">#c0c0c0</color>
+    <color name="titulo2">#853643</color>
+    <color name="black">#000000</color>
+    <color name="colorPrimary">#3f51b5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+</resources>
